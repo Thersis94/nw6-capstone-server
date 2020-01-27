@@ -18,7 +18,6 @@ authRouter.post('/refresh', requireAuth, (req, res) => {
 
 authRouter
     .post('/login', jsonBodyParser, (req, res, next) => {
-        console.log(req.body)
         const {
             user_name,
             password
